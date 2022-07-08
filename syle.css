@@ -1,0 +1,45 @@
+.btn {
+  
+    padding: 0.7em 1.3em;
+    cursor: pointer;
+    background: linear-gradient(90deg, #281a91 0%, #091553 100%);
+    text-decoration: none;
+    font-weight:bold;
+    font-size:1.1em; 
+    color: #fff;
+    border-radius:8px;
+    transition:0.3s; 
+}
+.btn-zoomin {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-left: 2.6em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.btn-zoomin:before {
+  content: "\e3aa";
+  position: absolute;
+  left: 1em;
+  padding: 0 1px;
+  font-family: untitled-font-1;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.btn-zoomin:hover:before, .btn-zoomin:focus:before, .btn-zoomin:active:before {
+  -webkit-transform: scale(1.6) translateZ(0);
+  transform: scale(1.6) translateZ(0);
+}
